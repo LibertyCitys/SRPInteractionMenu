@@ -47,7 +47,7 @@ function Menu()
 
 	_MenuPool:Remove()
 	_MenuPool = NativeUI.CreatePool()
-	MainMenu = NativeUI.CreateMenu(MenuTitle, GetResourceMetadata(GetCurrentResourceName(), 'title', 0) .. ' ~y~' .. GetResourceMetadata(GetCurrentResourceName(), 'version', 0), MenuOri)
+	MainMenu = NativeUI.CreateMenu(MenuTitle, GetResourceMetadata(GetCurrentResourceName(), 'title', 0) .. ' ~y~' .. "Controlled RP", 'version', 0), MenuOri)
 	_MenuPool:Add(MainMenu)
 	MainMenu:SetMenuWidthOffset(Config.MenuWidth)
 	collectgarbage()
@@ -61,12 +61,12 @@ function Menu()
 
 
     if LEORestrict() then
-        local LEOMenu = _MenuPool:AddSubMenu(MainMenu, 'LEO Toolbox', 'Law Enforcement Related Menu', true)
+        local LEOMenu = _MenuPool:AddSubMenu(MainMenu, 'Law Enforcement', 'LEO Toolbox', true)
         LEOMenu:SetMenuWidthOffset(Config.MenuWidth)
             local LEOActions = _MenuPool:AddSubMenu(LEOMenu, 'Actions', '', true)
             LEOActions:SetMenuWidthOffset(Config.MenuWidth)
                 local Cuff = NativeUI.CreateItem('Cuff', 'Cuff/Uncuff the closest player')
-                local Drag = NativeUI.CreateItem('Drag', 'Drag/Undrag the closest player')
+                local Drag = NativeUI.CreateItem('Grab', 'Grab/Ungrag the closest player')
                 local Seat = NativeUI.CreateItem('Seat', 'Place a player in the closest vehicle')
                 local Unseat = NativeUI.CreateItem('Unseat', 'Remove a player from the closest vehicle')
                 local Radar = NativeUI.CreateItem('Radar', 'Toggle the radar menu')
