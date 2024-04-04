@@ -23,7 +23,7 @@ Config = {}
 
 --This is how the version check will be displayed in the server console
 --Full = 0 [Default] | Simple = 1 | Disabled = 2
-Config.VersionChecker = 0
+Config.VersionChecker = 2
 
 --This is how you open the menu either via a command or button
 --Button = 0 [Default]  |  Command = 1
@@ -32,7 +32,7 @@ Config.OpenMenu = 0
 --This is the button that will open the menu (If chosen at Config.OpenMenu)
 --Default = 244 [M]  |  To change the button check out https://docs.fivem.net/game-references/controls/
 --Controller Support for this resource is DISABLED!
-Config.MenuButton = 244
+Config.MenuButton = 170
 
 --This is the command that will open the menu (If chosen at Config.OpenMenu)
 Config.Command = 'semmenu'
@@ -50,10 +50,10 @@ Config.MenuOrientation = 0
 --Player Name   = This is the name of the player
 --Custom        = This is a custom title set by you at Config.MenuTitleCustom
 --Default = 0 [Default]  |  Player Name = 1  |  Custom = 2
-Config.MenuTitle = 0
+Config.MenuTitle = 2
 
 --This is the custom title you can set for the menu (If chosen at Config.MenuTitle)
-Config.MenuTitleCustom = 'Custom Menu Title'
+Config.MenuTitleCustom = 'Int Menu'
 
 
 
