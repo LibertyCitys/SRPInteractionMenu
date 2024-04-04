@@ -78,8 +78,6 @@ function Menu()
                 local Spikes = NativeUI.CreateListItem('Deploy Spikes', SpikeLengths, 1, 'Places spike strips on the ground')
                 local DelSpikes = NativeUI.CreateItem('Remove Spikes', 'Remove spike strips placed on the ground')
                 local Shield = NativeUI.CreateItem('Toggle Shield', 'Toggle the bulletproof shield')
-                local CarbineRifle = NativeUI.CreateItem('Toggle Carbine', 'Toggle your carbine rifle')
-                local Shotgun = NativeUI.CreateItem('Toggle Shotgun', 'Toggle your pump shotgun')
                 PropsList = {}
                 for _, Prop in pairs(Config.Props) do
                     table.insert(PropsList, Prop.name)
@@ -104,10 +102,6 @@ function Menu()
                 LEOActions:AddItem(Spikes)
                 LEOActions:AddItem(DelSpikes)
                 LEOActions:AddItem(Shield)
-                if Config.UnrackWeapons == 1 or Config.UnrackWeapons == 2 then
-                    LEOActions:AddItem(CarbineRifle)
-                    LEOActions:AddItem(Shotgun)
-                end
                 if Config.DisplayProps then
                     LEOActions:AddItem(Props)
                     LEOActions:AddItem(RemoveProps)
